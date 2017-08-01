@@ -14,7 +14,7 @@ Read carefully the [Google Geocoding API documentation](https://developers.googl
 https://maps.googleapis.com/maps/api/geocode/json?address=16%20Villa%20Gaudelet%20Paris
 ```
 
-Go ahead, add a form to your HTML page. It should contain an input where a user can type an address in, and a button to submit the form. <!--Then use the jQuery `submit` event to catch when the form is posted by the user. That's when you'll want to run the AJAX query to the Google Geocoding service with an `$.ajax()` call.--> Add an event listener for the click event on the button, and then use fetch to make your query to the Google Geocoding service.
+Go ahead, add a form to your HTML page. It should contain an input where a user can type an address in, and a button to submit the form. <!--Then use the jQuery `submit` event to catch when the form is posted by the user. That's when you'll want to run the AJAX query to the Google Geocoding service with an `$.ajax()` call.--> Add an event listener for the click event on the button, and then use the Fetch API to make your query to the Google Geocoding service.
 
 In the callback, try to `console.log()` what the API gave you back. It's a big JSON, look at it! Then figure out where the GPS coordinates are and display them on screen.
 
